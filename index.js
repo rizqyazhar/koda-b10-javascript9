@@ -48,34 +48,7 @@ function toLowerCaseWithBuiltin(data) {
 function toLowerCaseWithoutBuiltin(data) {
   let hasil = "";
   for (let i = 0; i < data.length; i++) {
-    if (
-      data[i] === "A" ||
-      data[i] === "B" ||
-      data[i] === "C" ||
-      data[i] === "D" ||
-      data[i] === "E" ||
-      data[i] === "F" ||
-      data[i] === "G" ||
-      data[i] === "H" ||
-      data[i] === "I" ||
-      data[i] === "J" ||
-      data[i] === "K" ||
-      data[i] === "L" ||
-      data[i] === "M" ||
-      data[i] === "N" ||
-      data[i] === "O" ||
-      data[i] === "P" ||
-      data[i] === "Q" ||
-      data[i] === "R" ||
-      data[i] === "S" ||
-      data[i] === "T" ||
-      data[i] === "U" ||
-      data[i] === "V" ||
-      data[i] === "W" ||
-      data[i] === "X" ||
-      data[i] === "Y" ||
-      data[i] === "Z"
-    ) {
+    if (alphabet[data[i]]) {
       hasil += alphabet[data[i]];
     } else {
       hasil += data[i];
