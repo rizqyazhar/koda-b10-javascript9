@@ -60,17 +60,17 @@ function toLowerCaseWithoutBuiltin(data) {
 async function getEmail() {
   const data = await getDataAsyncAwait(URL);
 
-  const emailBoxWithBuiltin = data.map((list) =>
+  const emailToLowerCaseWithBuiltin = data.map((list) =>
     toLowerCaseWithBuiltin(list.email),
   );
-  const emailBoxWithoutBuiltin = data.map((list) =>
+  const emailToLowerCaseWithoutBuiltin = data.map((list) =>
     toLowerCaseWithoutBuiltin(list.email),
   );
 
-  console.log("With Builtin Method:");
-  console.log(emailBoxWithBuiltin);
-  console.log("Without Builtin Method:");
-  console.log(emailBoxWithoutBuiltin);
+  console.log("ToLowerCase With Builtin Method:");
+  console.log(emailToLowerCaseWithBuiltin);
+  console.log("ToLowerCase Without Builtin Method:");
+  console.log(emailToLowerCaseWithoutBuiltin);
 }
 
 getEmail();
