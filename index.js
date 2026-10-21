@@ -28,14 +28,14 @@ const alphabet = {
   Z: "z",
 };
 
-async function getDataAsyncAwait(url) {
+async function getDataAsyncAwait(link) {
   try {
-    const response = await fetch(url);
+    const response = await fetch(link);
     const result = await response.json();
 
     return result;
-  } catch (error) {
-    console.log(error.message);
+  } catch {
+    console.log("Something went wrong");
   }
 }
 
@@ -57,8 +57,10 @@ function toLowerCaseWithoutBuiltin(data) {
   return hasil;
 }
 
-async function getEmail() {
-  const data = await getDataAsyncAwait(URL);
+async function getEmail(link) {
+  const data = await getDataAsyncAwait(link);
+
+  if (!data) return console.log("Data not found");
 
   const emailToLowerCaseWithBuiltin = data.map((list) =>
     toLowerCaseWithBuiltin(list.email),
@@ -73,4 +75,4 @@ async function getEmail() {
   console.log(emailToLowerCaseWithoutBuiltin);
 }
 
-getEmail();
+getEmail(URL);
