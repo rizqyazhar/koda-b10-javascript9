@@ -1,0 +1,30 @@
+{
+  "name": "koda-b10-javascript9",
+  "version": "1.0.0",
+  "description": "Membuat program untuk menampilkan list email dalam bentuk array yang datanya diambil menggunakaan fetch() dari [jsonplaceholder.com](https://jsonplaceholder.typicode.com/users).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index.js",
+    "lint": "eslint *.mjs *.js *.cjs",
+    "lint:fix": "eslint *.mjs *.js *.cjs --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizqyazhar/koda-b10-javascript9.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/rizqyazhar/koda-b10-javascript9/issues"
+  },
+  "homepage": "https://github.com/rizqyazhar/koda-b10-javascript9#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0"
+  }
+}
